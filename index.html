@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxlet – Multi Tool Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- TOP NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <svg class="logo-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM10.5 18L6 13.5L7.41 12.09L10.5 15.17L16.59 9.09L18 10.5L10.5 18Z" fill="#42f8f5"/>
+                <path d="M12 4.00002C13.0609 4.00002 14.0783 4.42145 14.8284 5.17159C15.5786 5.92174 16 6.93915 16 8.00002V9.00002H8V8.00002C8 6.93915 8.42143 5.92174 9.17157 5.17159C9.92172 4.42145 10.9391 4.00002 12 4.00002V4.00002ZM13 11.5V13H11V11.5C10.4477 11.5 10 11.0523 10 10.5V9.5H14V10.5C14 11.0523 13.5523 11.5 13 11.5Z" fill="#42f8f5" fill-opacity="0.6"/>
+            </svg>
+            <span class="logo-text">Boxlet – Multi Tool Hub</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#tools">Tools</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="hamburger" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <div class="app-container">
+        <!-- LEFT SIDEBAR -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-section">
+                <h3><span class="icon">🔻</span> PDF Tools</h3>
+                <ul>
+                    <li><a href="#" class="tool-link" data-tool="merge-pdf">🔗 Merge PDF</a></li>
+                    <li><a href="#" class="tool-link" data-tool="split-pdf">✂️ Split PDF</a></li>
+                    <li><a href="#" class="tool-link" data-tool="compress-pdf">🗜️ Compress PDF</a></li>
+                    <li><a href="#" class="tool-link" data-tool="pdf-to-word">🔄 PDF to Word</a></li>
+                    <li><a href="#" class="tool-link" data-tool="pdf-to-jpg">🖼️ PDF to JPG</a></li>
+                    <li><a href="#" class="tool-link" data-tool="protect-pdf">🔐 Protect PDF</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <h3><span class="icon">🧰</span> Utility Tools</h3>
+                <ul>
+                    <li><a href="#" class="tool-link" data-tool="image-compressor">🖼️ Image Compressor</a></li>
+                    <li><a href="#" class="tool-link" data-tool="qr-generator">📱 QR Code Generator</a></li>
+                    <li><a href="#" class="tool-link" data-tool="password-generator">🔑 Password Generator</a></li>
+                    <li><a href="#" class="tool-link" data-tool="word-counter">📝 Word Counter</a></li>
+                    <li><a href="#" class="tool-link" data-tool="text-to-speech">🗣️ Text to Speech</a></li>
+                    <li><a href="#" class="tool-link" data-tool="stopwatch">⏱️ Timer / Stopwatch</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            <section id="home" class="hero-section">
+                <h1>Welcome to Boxput</h1>
+                <p>Your all-in-one hub for futuristic, lightning-fast web tools. No uploads, pure browser power.</p>
+                <a href="#tools" class="cta-button">Explore Tools</a>
+            </section>
+
+            <section id="tools" class="tools-section">
+                <h2>All Tools</h2>
+                <div class="tool-grid">
+                    <!-- PDF Tools (Simulated) -->
+                    <div class="tool-card"><span class="icon">🔗</span><h3>Merge PDF</h3><p>Combine multiple PDF files into one single document.</p><button class="open-tool-btn" data-tool="merge-pdf">Open Tool</button></div>
+                    <div class="tool-card"><span class="icon">✂️</span><h3>Split PDF</h3><p>Extract one or more pages from your PDF file.</p><button class="open-tool-btn" data-tool="split-pdf">Open Tool</button></div>
+                    <div class="tool-card"><span class="icon">🗜️</span><h3>Compress PDF</h3><p>Reduce the file size of your PDF while optimizing for quality.</p><button class="open-tool-btn" data-tool="compress-pdf">Open Tool</button></div>
+                    <div class="tool-card"><span class="icon">🔄</span><h3>PDF to Word</h3><p>Convert your PDF files to editable Word documents.</p><button class="open-tool-btn" data-tool="pdf-to-word">Open Tool</button></div>
+                    <div class="tool-card"><span class="icon">🖼️</span><h3>PDF to JPG</h3><p>Convert each page of a PDF into a high-quality JPG image.</p><button class="open-tool-btn" data-tool="pdf-to-jpg">Open Tool</button></div>
+                    <div class="tool-card"><span class="icon">🔐</span><h3>Protect PDF</h3><p>Add a password and encrypt your PDF to protect sensitive data.</p><button class="open-tool-btn" data-tool="protect-pdf">Open Tool</button></div>
+
+                    <!-- Utility Tools (Functional) -->
+                    <div class="tool-card"><span class="icon">🖼️</span><h3>Image Compressor</h3><p>Reduce image file size without significant quality loss.</p><button class="open-tool-btn" data-tool="image-compressor">Open Tool</button></div>
+                    <div class="tool-card"><span class="icon">📱</span><h3>QR Code Generator</h3><p>Create QR codes for URLs, text, and more instantly.</p><button class="open-tool-btn" data-tool="qr-generator">Open Tool</button></div>
+                    <div class="tool-card"><span class="icon">🔑</span><h3>Password Generator</h3><p>Generate strong, secure, and random passwords.</p><button class="open-tool-btn" data-tool="password-generator">Open Tool</button></div>
+                    <div class="tool-card"><span class="icon">📝</span><h3>Word Counter</h3><p>Count words, characters, sentences, and paragraphs in text.</p><button class="open-tool-btn" data-tool="word-counter">Open Tool</button></div>
+                    <div class="tool-card"><span class="icon">🗣️</span><h3>Text to Speech</h3><p>Convert written text into natural-sounding speech.</p><button class="open-tool-btn" data-tool="text-to-speech">Open Tool</button></div>
+                    <div class="tool-card"><span class="icon">⏱️</span><h3>Timer / Stopwatch</h3><p>A simple and precise stopwatch and timer utility.</p><button class="open-tool-btn" data-tool="stopwatch">Open Tool</button></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Boxput. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Terms of Service</a> |
+                <a href="#">Contact</a>
+            </div>
+            <div class="social-icons">
+                 <a href="#" aria-label="Twitter">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+                </a>
+                <a href="#" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.419 2.865 8.166 6.839 9.49.5.09.682-.218.682-.482 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.342-3.369-1.342-.455-1.156-1.11-1.465-1.11-1.465-.908-.62.069-.608.069-.608 1.004.07 1.532 1.03 1.532 1.03.891 1.528 2.341 1.087 2.91.832.092-.647.349-1.088.635-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.03-2.682-.103-.253-.446-1.27.098-2.645 0 0 .84-.269 2.75 1.025A9.548 9.548 0 0112 6.84c.85.004 1.705.114 2.504.336 1.909-1.294 2.748-1.025 2.748-1.025.546 1.375.201 2.392.1 2.645.64.698 1.028 1.591 1.028 2.682 0 3.842-2.337 4.687-4.565 4.935.359.309.679.92.679 1.852 0 1.338-.012 2.419-.012 2.745 0 .266.18.577.688.48A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z"></path></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div id="tool-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close-btn">&times;</button>
+            <h2 id="modal-title">Tool Title</h2>
+            <div id="modal-body">
+                <!-- Tool-specific UI will be injected here by JavaScript -->
+            </div>
+            <div id="modal-status" class="modal-status"></div>
+        </div>
+    </div>
+
+</body>
+</html>
